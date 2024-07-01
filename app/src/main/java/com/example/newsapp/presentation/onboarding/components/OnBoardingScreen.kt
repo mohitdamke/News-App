@@ -24,12 +24,15 @@ import com.example.newsapp.common.NewsTextButton
 import com.example.newsapp.presentation.Dimens.MediumPadding1
 import com.example.newsapp.presentation.Dimens.MediumPadding2
 import com.example.newsapp.presentation.Dimens.pageIndicatorWidth
+import com.example.newsapp.presentation.onboarding.OnBoardingEvent
 import com.example.newsapp.presentation.onboarding.pages
 import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
-fun OnBoardingScreen(modifier: Modifier = Modifier) {
+fun OnBoardingScreen(
+    modifier: Modifier = Modifier, event: (OnBoardingEvent) -> Unit
+) {
     Column(modifier = modifier.fillMaxSize()) {
         val pagerState = rememberPagerState(initialPage = 0) {
             pages.size
@@ -80,9 +83,8 @@ fun OnBoardingScreen(modifier: Modifier = Modifier) {
                 Spacer(modifier = Modifier.width(10.dp))
                 NewsButton(text = buttonState.value[1], onClick = {
                     scope.launch {
-                        if (pagerState.currentPage == 3) {
-                            //Todo: Navigate to home screen
-
+                        if (pagerState.currentPage == 2) {
+                            event(OnBoardingEvent.SaveAppEntry)
                         } else {
                             pagerState.animateScrollToPage(page = pagerState.currentPage + 1)
                         }

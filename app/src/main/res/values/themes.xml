@@ -5,5 +5,9 @@
         <item name="windowSplashScreenAnimatedIcon">@drawable/book</item>
         <item name="postSplashScreenTheme">@style/Theme.NewsApp</item>
     </style>
-    <style name="Theme.NewsApp" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style name="Theme.NewsApp" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
 </resources>

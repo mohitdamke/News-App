@@ -1,10 +1,8 @@
 # News App
 
 This is a News App built using Kotlin and Jetpack components following the Clean Code architecture. It utilizes the Paging Library for efficient data loading, Dagger Hilt for dependency injection, and Retrofit to fetch news from the News API.
- 
- 
-https://github.com/mohitdamke/NewsApp/assets/112572179/84c7147c-9c74-40bb-952a-98a1001f237f
 
+https://github.com/mohitdamke/NewsApp/assets/112572179/0cda068f-8806-41b9-9570-3e900bdb7ec5
 
 ## Features
 
@@ -51,15 +49,13 @@ The app is built using the Clean Code architecture, which divides the code into 
 Once the app is installed and running, you can browse the latest news articles. The app will efficiently load news articles using the Paging Library, ensuring a smooth user experience even with large data sets.
 
 ## Screenshots
-<div align="center">
-	<img width = "33%" src="[https://i.imgur.com/8BgVXcY.png](https://github.com/mohitdamke/NewsApp/assets/112572179/1203790a-6665-42db-b63a-28d72a7eaf65)">
-</div>
-![](https://github.com/mohitdamke/NewsApp/assets/112572179/1203790a-6665-42db-b63a-28d72a7eaf65)
-![](https://github.com/mohitdamke/NewsApp/assets/112572179/25e3be2b-3743-4ab2-a91a-1f405ccd46e9)
-![](https://github.com/mohitdamke/NewsApp/assets/112572179/e45e1fad-1b00-4fb3-b04a-37e80b4d3318)
-![](https://github.com/mohitdamke/NewsApp/assets/112572179/19049678-46d6-4175-95be-0a86e1ecde03)
-![](https://github.com/mohitdamke/NewsApp/assets/112572179/42a17c63-0d36-45cb-a396-d81edfba05bf)
-![](https://github.com/mohitdamke/NewsApp/assets/112572179/1af31062-4ebc-407f-8435-500b7b309c04)
+![WhatsApp Image 2024-07-03 at 3 08 59 AM](https://github.com/mohitdamke/NewsApp/assets/112572179/992e426c-154c-4d1f-8082-8b51ca6827d1)
+![WhatsApp Image 2024-07-03 at 3 08 59 AM(1)](https://github.com/mohitdamke/NewsApp/assets/112572179/848e381b-1468-4425-8ce1-df6a6d7aab6d)
+![WhatsApp Image 2024-07-03 at 3 08 59 AM(2)](https://github.com/mohitdamke/NewsApp/assets/112572179/2a0338f5-c66e-4495-a90b-977030544127)
+![WhatsApp Image 2024-07-03 at 3 09 00 AM(1)](https://github.com/mohitdamke/NewsApp/assets/112572179/c526e627-4602-450c-bcb1-ac4d383810de)
+![WhatsApp Image 2024-07-03 at 3 09 00 AM(2)](https://github.com/mohitdamke/NewsApp/assets/112572179/307713c3-dbc2-419a-b3e2-993785879c68)
+![WhatsApp Image 2024-07-03 at 3 09 01 AM](https://github.com/mohitdamke/NewsApp/assets/112572179/95616611-8e50-4772-b34d-24698d873386)
+
 
 
 ## Contributing

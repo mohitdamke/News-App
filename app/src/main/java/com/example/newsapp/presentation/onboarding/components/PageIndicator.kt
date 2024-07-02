@@ -7,13 +7,12 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.Color.Companion.Blue
 import androidx.compose.ui.unit.dp
 import com.example.newsapp.presentation.Dimens.IndicatorSize
 import com.example.newsapp.ui.theme.BlueGray
@@ -26,16 +25,19 @@ fun PageIndicator(
     unselectedColor: Color = BlueGray
 
 ) {
-    Row(modifier = Modifier, horizontalArrangement = Arrangement.SpaceBetween) {
+    Row(
+        modifier = Modifier.padding(horizontal = 4.dp),
+        horizontalArrangement = Arrangement.spacedBy(6.dp),
+        verticalAlignment = Alignment.CenterVertically
+    ) {
         repeat(pageSize) { page ->
             Box(
-                modifier = modifier.clip(CircleShape).size(50.dp).padding(14.dp).clip(RoundedCornerShape(100.dp))
+                modifier = modifier
+                    .size(24.dp)
+                    .padding(vertical = 4.dp, horizontal = 2.dp)
+                    .clip(CircleShape)
                     .background(color = if (page == selectedPage) selectedColor else unselectedColor)
-
-            ) {
-
-            }
-
+            )
         }
     }
 }

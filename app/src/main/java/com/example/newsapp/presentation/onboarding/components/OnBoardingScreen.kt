@@ -19,11 +19,9 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.example.newsapp.common.NewsButton
-import com.example.newsapp.common.NewsTextButton
-import com.example.newsapp.presentation.Dimens.MediumPadding1
-import com.example.newsapp.presentation.Dimens.MediumPadding2
-import com.example.newsapp.presentation.Dimens.pageIndicatorWidth
+import com.example.newsapp.presentation.common.NewsButton
+import com.example.newsapp.presentation.common.NewsTextButton
+import com.example.newsapp.presentation.Dimens.IndicatorSize
 import com.example.newsapp.presentation.onboarding.OnBoardingEvent
 import com.example.newsapp.presentation.onboarding.pages
 import kotlinx.coroutines.launch
@@ -64,7 +62,7 @@ fun OnBoardingScreen(
             PageIndicator(
                 pageSize = pages.size,
                 selectedPage = pagerState.currentPage,
-                modifier = Modifier.width(pageIndicatorWidth)
+                modifier = Modifier.width(IndicatorSize)
             )
             Row(
                 modifier = Modifier.weight(1f),
@@ -98,21 +96,3 @@ fun OnBoardingScreen(
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

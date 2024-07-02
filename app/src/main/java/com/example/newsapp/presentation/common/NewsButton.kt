@@ -1,4 +1,4 @@
-package com.example.newsapp.common
+package com.example.newsapp.presentation.common
 
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.width

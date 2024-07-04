@@ -6,12 +6,6 @@
         <item name="postSplashScreenTheme">@style/Theme.NewsApp</item>
     </style>
 
-    <style name="Theme.App.Starting.Theme.Night" parent="Theme.SplashScreen">
-        <item name="windowSplashScreenBackground">#1C1E21</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/book</item>
-        <item name="postSplashScreenTheme">@style/Theme.NewsApp</item>
-    </style>
-
     <style name="Theme.NewsApp" parent="android:Theme.Material.Light.NoActionBar">
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowTranslucentNavigation">true</item>

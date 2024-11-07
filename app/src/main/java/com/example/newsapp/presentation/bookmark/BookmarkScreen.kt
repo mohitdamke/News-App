@@ -16,7 +16,6 @@ import com.example.newsapp.R
 import com.example.newsapp.domain.model.Article
 import com.example.newsapp.presentation.Dimens.MediumPadding1
 import com.example.newsapp.presentation.common.ArticlesList
-import com.example.newsapp.presentation.navgraph.Route
 
 @Composable
 fun BookmarkScreen(
@@ -25,7 +24,7 @@ fun BookmarkScreen(
     navigateToDetails: (Article) -> Unit
 ) {
     Column(
-        modifier = Modifier
+        modifier = modifier
             .fillMaxWidth()
             .statusBarsPadding()
             .padding(top = MediumPadding1, start = MediumPadding1, end = MediumPadding1)
@@ -43,7 +42,8 @@ fun BookmarkScreen(
 
         ArticlesList(
             articles = state.articles,
-            onClick = {navigateToDetails(it)
+            onClick = {
+                navigateToDetails(it)
             }
         )
     }

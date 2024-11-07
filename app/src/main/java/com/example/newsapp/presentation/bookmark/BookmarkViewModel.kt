@@ -13,8 +13,7 @@ import javax.inject.Inject
 @HiltViewModel
 class BookmarkViewModel @Inject constructor(
     private val newsUseCases: NewsUseCases
-) : ViewModel()
-{
+) : ViewModel() {
 
     private val _state = mutableStateOf(BookmarkState())
     val state: State<BookmarkState> = _state

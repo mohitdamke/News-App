@@ -10,7 +10,6 @@ import com.example.newsapp.data.remote.SearchNewsPagingSource
 import com.example.newsapp.domain.model.Article
 import com.example.newsapp.domain.repository.NewsRepository
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.onEach
 
 class NewsRepositoryImpl(
     private val newsApi: NewsApi,
@@ -39,7 +38,7 @@ class NewsRepositoryImpl(
                 )
             }
         ).flow
-        }
+    }
 
 
     override suspend fun upsertArticle(article: Article) {

@@ -3,7 +3,6 @@ package com.example.newsapp.presentation.details.components
 import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Share
@@ -32,7 +31,7 @@ fun DetailsTopBar(
     onBackClick: () -> Unit,
 ) {
     TopAppBar(
-        modifier = Modifier.fillMaxWidth(),
+        modifier = modifier.fillMaxWidth(),
         colors = TopAppBarDefaults.mediumTopAppBarColors(
             containerColor = Color.Transparent,
             actionIconContentColor = colorResource(id = R.color.body),
@@ -57,8 +56,7 @@ fun DetailsTopBar(
             }
             IconButton(onClick = onShareClick) {
                 Icon(
-                    imageVector = Icons.Default.Share,
-                    contentDescription = null
+                    imageVector = Icons.Default.Share, contentDescription = null
                 )
             }
             IconButton(onClick = onBrowsingClick) {
@@ -76,10 +74,10 @@ fun DetailsTopBar(
 @Composable
 fun DetailsTopBarPreview() {
     NewsAppTheme(dynamicColor = false) {
-        Box(modifier = Modifier
-            .background(MaterialTheme.colorScheme.background)) {
-            DetailsTopBar(
-                onShareClick = { /*TODO*/ },
+        Box(
+            modifier = Modifier.background(MaterialTheme.colorScheme.background)
+        ) {
+            DetailsTopBar(onShareClick = { /*TODO*/ },
                 onBookMarkClick = { /*TODO*/ },
                 onBrowsingClick = {}) {
 

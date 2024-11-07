@@ -24,7 +24,6 @@ import com.example.newsapp.R
 import com.example.newsapp.presentation.Dimens.ExtraSmallPadding2
 import com.example.newsapp.ui.theme.NewsAppTheme
 
-
 @Composable
 fun NewsBottomNavigation(
     items: List<BottomNavigationItem>,

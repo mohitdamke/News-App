@@ -1,7 +1,5 @@
 package com.example.newsapp.presentation.common
 
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -11,11 +9,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color.Companion.White
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.newsapp.ui.theme.Black
-import com.example.newsapp.ui.theme.NewsAppTheme
-import com.example.newsapp.ui.theme.WhiteGray
 
 @Composable
 fun NewsButton(modifier: Modifier = Modifier, text: String, onClick: () -> Unit) {

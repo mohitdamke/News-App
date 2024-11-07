@@ -15,14 +15,13 @@ import com.example.newsapp.presentation.Dimens.ExtraSmallPadding2
 import com.example.newsapp.presentation.Dimens.MediumPadding1
 import com.example.newsapp.presentation.Dimens.MediumPadding2
 
-
 @Composable
 fun ArticlesList(
     modifier: Modifier = Modifier,
     articles: List<Article>,
     onClick: (Article) -> Unit
 ) {
-    if (articles.isEmpty()){
+    if (articles.isEmpty()) {
         EmptyScreen()
     }
     LazyColumn(
@@ -40,7 +39,6 @@ fun ArticlesList(
     }
 
 }
-
 
 
 @Composable

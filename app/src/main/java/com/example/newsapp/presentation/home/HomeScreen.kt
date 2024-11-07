@@ -1,6 +1,5 @@
 package com.example.newsapp.presentation.home
 
-
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.basicMarquee
@@ -12,8 +11,6 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.statusBarsPadding
-import androidx.compose.foundation.layout.width
-import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.derivedStateOf
@@ -21,7 +18,6 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.scale
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
@@ -32,11 +28,8 @@ import com.example.newsapp.R
 import com.example.newsapp.domain.model.Article
 import com.example.newsapp.presentation.Dimens.MediumPadding1
 import com.example.newsapp.presentation.Dimens.MediumPadding2
-import com.example.newsapp.presentation.Dimens.MediumPadding3
 import com.example.newsapp.presentation.common.ArticlesList
 import com.example.newsapp.presentation.common.SearchBar
-import com.example.newsapp.presentation.navgraph.Route
-
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
@@ -69,8 +62,7 @@ fun HomeScreen(
             contentDescription = null,
             modifier = Modifier
                 .size(width = 900.dp, height = 30.dp)
-                .align(Alignment.CenterHorizontally)
-            , contentScale = ContentScale.Crop
+                .align(Alignment.CenterHorizontally), contentScale = ContentScale.Crop
         )
 
         Spacer(modifier = Modifier.padding(10.dp))

@@ -196,18 +196,3 @@ private fun navigateToDetails(navController: NavController, article: Article) {
     )
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

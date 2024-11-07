@@ -9,8 +9,8 @@ import javax.inject.Inject
 
 @HiltViewModel
 class HomeViewModel @Inject constructor(
-    private val newsUseCases: NewsUseCases
-): ViewModel() {
+    newsUseCases: NewsUseCases
+) : ViewModel() {
 
     val news = newsUseCases.getNews(
         sources = listOf("bbc-news", "abc-news", "al-jazeera-english")

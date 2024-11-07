@@ -15,14 +15,10 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.tooling.preview.Preview
 import com.example.newsapp.R
 import com.example.newsapp.presentation.Dimens.MediumPadding1
 import com.example.newsapp.presentation.Dimens.MediumPadding2
 import com.example.newsapp.presentation.onboarding.Page
-import com.example.newsapp.presentation.onboarding.pages
-import com.example.newsapp.ui.theme.NewsAppTheme
-
 
 @Composable
 fun OnBoardingPage(modifier: Modifier = Modifier, page: Page) {

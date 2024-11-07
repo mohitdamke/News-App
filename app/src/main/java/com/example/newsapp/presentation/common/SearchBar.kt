@@ -1,6 +1,5 @@
 package com.example.newsapp.presentation.common
 
-
 import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import androidx.compose.foundation.border
 import androidx.compose.foundation.interaction.MutableInteractionSource
@@ -46,7 +45,9 @@ fun SearchBar(
     val interactionSource = remember {
         MutableInteractionSource()
     }
+
     val isClicked = interactionSource.collectIsPressedAsState().value
+
     LaunchedEffect(key1 = isClicked) {
         if (isClicked) {
             onClick?.invoke()

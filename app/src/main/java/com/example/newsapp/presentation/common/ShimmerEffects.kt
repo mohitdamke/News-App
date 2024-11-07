@@ -1,7 +1,6 @@
 package com.example.newsapp.presentation.common
 
 import android.annotation.SuppressLint
-import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import androidx.compose.animation.core.RepeatMode
 import androidx.compose.animation.core.animateFloat
 import androidx.compose.animation.core.infiniteRepeatable
@@ -29,7 +28,6 @@ import com.example.newsapp.R
 import com.example.newsapp.presentation.Dimens
 import com.example.newsapp.presentation.Dimens.MediumPadding1
 import com.example.newsapp.ui.theme.NewsAppTheme
-
 
 @SuppressLint("ModifierFactoryUnreferencedReceiver")
 fun Modifier.shimmerEffect() = composed {

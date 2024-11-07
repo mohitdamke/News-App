@@ -43,7 +43,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        kotlinCompilerExtensionVersion = "1.5.7"
     }
     packaging {
         resources {
@@ -70,6 +70,9 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)   //Splash Api
     implementation(libs.androidx.core.splashscreen)
+
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.21")
+    implementation ("org.jetbrains.kotlin:kotlin-stdlib:1.9.21")
 
     //Compose Navigation
     implementation("androidx.navigation:navigation-compose:2.7.7")
